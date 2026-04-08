@@ -108,6 +108,44 @@ Le fichier `api/forensic.log` est créé automatiquement dès la première conne
 
 ---
 
+## Mise en ligne avec Docker (bonus)
+
+### Concept
+2 conteneurs : un pour l'**API** (Express port 3001), un pour le **frontend** (React port 3000), orchestrés avec **Docker Compose**. Ça permet de partager l'app sur le réseau local du cours.
+
+### Étapes à faire
+
+**1. Installer Docker Desktop** sur la machine hôte (si pas déjà fait)
+
+**2. Créer `api/Dockerfile`**
+Image Node.js, copie les fichiers, `npm install`, `npm start`
+
+**3. Créer `40bierges/Dockerfile`**
+Image Node.js, copie les fichiers, `npm install`, `npm start`
+
+**4. Créer `docker-compose.yml` à la racine**
+Définit les 2 services, expose les ports, crée un réseau interne entre eux
+
+**5. Adapter l'URL de l'API dans le frontend**
+Remplacer `localhost:3001` par l'IP de la machine hôte (ex: `192.168.x.x:3001`)
+
+**6. Lancer**
+```bash
+docker-compose up
+```
+
+**7. Partager l'IP locale avec les autres groupes**
+L'app est accessible depuis n'importe quelle machine sur le même réseau Wi-Fi/local du cours via `http://[votre-ip]:3000`
+
+### Avantages vs Vercel
+- `forensic.log` persiste tant que le conteneur tourne (pas le problème Vercel)
+- Pas besoin d'internet
+- Facile à couper/relancer entre les groupes
+
+> A coder quand on décide de le déployer — demander à Claude de générer les Dockerfiles + docker-compose.yml
+
+---
+
 ## À compléter le 15 avril
 
 - [ ] Analyser les failles des autres groupes
