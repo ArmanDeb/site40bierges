@@ -1,0 +1,6 @@
+{"timestamp":"2026-04-08T18:10:53.539Z","event":"AUTH_ATTEMPT","mail":"admin@admin.com","status":"INVALID_PASSWORD","userProfile":{"id":1,"mail":"admin@admin.com","password":"$2a$12$5n24YRkOX.AuoySD7sk8KuXKR8Ms.8/gZC2FPhnZCIwTi5H2wDNdO","role":"admin","secret":"Je sais où se situe la chouette d'or !"}}
+{"timestamp":"2026-04-08T18:12:54.252Z","event":"AUTH_ATTEMPT","mail":"armandebongnie@gmail.com","status":"USER_NOT_FOUND","userProfile":null}
+{"timestamp":"2026-04-08T18:12:55.681Z","event":"AUTH_ATTEMPT","mail":"armandebongnie@gmail.com","status":"USER_NOT_FOUND","userProfile":null}
+{"timestamp":"2026-04-08T18:12:58.269Z","event":"AUTH_ATTEMPT","mail":"armandebongnie@gmail.com","status":"USER_NOT_FOUND","userProfile":null}
+{"timestamp":"2026-04-08T18:12:58.420Z","event":"AUTH_ATTEMPT","mail":"armandebongnie@gmail.com","status":"USER_NOT_FOUND","userProfile":null}
+{"timestamp":"2026-04-08T18:12:58.578Z","event":"AUTH_ATTEMPT","mail":"armandebongnie@gmail.com","status":"USER_NOT_FOUND","userProfile":null}
